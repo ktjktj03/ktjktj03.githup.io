@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+}
+.top{
+    background-color: white;
+}
+.naver_left{
+    margin-left: 30px;
+    font-size: 40px;
+    margin-top: 15px;
+    color: gray;
+}
+.naver_right ul li{
+    float: right;
+    margin-left: 35px;
+    list-style-type: square;
+}
+.naver_right{
+    margin-right: 50px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: pink;
+    list-style-type: square;
+}
+.top{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.top: :after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.like{
+    text-align: center;
+    line-height: 100vh;
+}
+.intro{
+    width: 100%;
+    height: 100vh;
+    font-size: 77px;
+    color: pink;
+    background-image: url('https://www.suyongso.com/files/attach/images/115/733/477/014/ce805d35b10d3e1d4c3c54f49159dff3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+    width: 1600px;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.last{
+    color: #87CEFA;
+    width: 30%;
+    height: 350px;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.contect{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    line-height: 140px;
+}
+.last img{
+    width: 100%;
+}
+.after{
+     text-align: center;
+    line-height: 100vh;
+    display : none;
+}
+
+@media screen and (max-width: 1600px) {
+.container{
+    width: 100%;
+}
+.intro{
+    width: 100%;
+    height: 100vh;
+    font-size: 50px;
+}
+.naver_left{
+    margin-left: 30px;
+    font-size: 30px;
+    margin-top: 15px;
+    color: gray;
+
+}

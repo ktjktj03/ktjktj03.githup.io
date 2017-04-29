@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <script
+             src="https://code.jquery.com/jquery-3.2.1.js"
+             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+             crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('.naver_left').click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".contect").offset().top
+                    }, 3000);
+              });
+              
+              $(".li").mouseover(function(){
+                $(this).css("background-color", "black")
+              });
+              
+              $(".li").mouseleave(function(){
+                $(this).css("background-color", "white")
+              });
+              
+              $(".intro").mouseover(function(){
+                $(this).css("background-image", "url('ping.jpg')")
+              });
+              
+              $(".intro").mouseleave(function(){
+                $(this).css("background-image", "url('https://www.suyongso.com/files/attach/images/115/733/477/014/ce805d35b10d3e1d4c3c54f49159dff3.png')")
+              });
+              
+               $(".intro").mouseover(function(){
+                $(this).css("background-image", "url('ping.jpg')")
+                $(".like").css("display", "none")
+                $(".after").css("display", "block")
+                
+              });
+
+  
+            });
+    </script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <meta charset="utf-8">
+        <title>introduce</title>
+    </head>
+    
+    <body class="back">
+        <header class="top">
+            <h1 class="naver_left left">
+                Like lion</h1>
+            <nav class="naver_right">
+                <ul class="gnb">
+                   <li class="li" id=menu> menu</li>
+                   <li class="li"> inst</li>
+                   <li class="li"> for</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="intro">
+            <p class= "like">Like Lion KIM TAE JIN</p>
+            <p class="after">나의 귀요미</p>
+        </div>
+    </body>
+    
+    <body>
+        <section class="container">
+            <article class="last">
+                <img src="http://cfile3.uf.tistory.com/image/2256823F54CB39130E4B23">
+                <p>so cool</p>
+            </article>
+            <article class="last">
+                <img src="http://cfile3.uf.tistory.com/image/2256823F54CB39130E4B23">
+                <p>so nice</p>
+            </article>
+            <article class="last">
+                <img src="http://cfile3.uf.tistory.com/image/2256823F54CB39130E4B23">
+                <p>perfect</p>
+            </article>
+        </section>
+        <div class="contect">
+            <p id="taejin">PHONE:010-2216-7363, EMAIL:ktjktj03@gmail.com</p>
+        </div>
+    </body>
+</html>
